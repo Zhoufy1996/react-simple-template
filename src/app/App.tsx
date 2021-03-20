@@ -3,11 +3,11 @@ import React, { lazy, Suspense } from 'react';
 import '../assets/styles/index.less';
 import classes from './App.less';
 
-const Demo = lazy(() => import('../pages/demo/demo'));
+const Demo: React.FC<{}> = lazy(() => import('../pages/demo/demo'));
 
-const Loading = () => <div>loading</div>;
+const Loading: React.FC<{}> = () => <div>loading</div>;
 
-const SuspenseDemo = () => {
+const SuspenseDemo: React.FC<{}> = () => {
     return (
         <Suspense fallback={<Loading />}>
             <Demo />
@@ -15,7 +15,7 @@ const SuspenseDemo = () => {
     );
 };
 
-const App = () => {
+const App: React.FC<{}> = () => {
     return (
         <div className={classes.app}>
             app

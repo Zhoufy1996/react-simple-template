@@ -67,6 +67,7 @@ const eslintConfig = {
         'react/prop-types': 'off',
         // "react/require-default-props": ["off"],
         'jsx-a11y/no-static-element-interactions': 'off',
+        'import/prefer-default-export': 'off',
     },
 };
 
