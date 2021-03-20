@@ -7,6 +7,8 @@ yarn fix // 根据lint修复代码格式
 yarn build // 打包
 
 yarn test // 测试
+
+git remote set-url origin @REPOSITORY // 更改项目git地址
 ```
 
 #### 目录
@@ -26,3 +28,4 @@ yarn test // 测试
     | -- webpack    webpack脚本
 
 ```
+
