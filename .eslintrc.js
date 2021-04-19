@@ -68,6 +68,8 @@ const eslintConfig = {
         // "react/require-default-props": ["off"],
         'jsx-a11y/no-static-element-interactions': 'off',
         'import/prefer-default-export': 'off',
+        'no-undef': 'off',
+        'react/require-default-props': 'off',
     },
 };
 
