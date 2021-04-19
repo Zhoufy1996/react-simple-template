@@ -1,17 +1,8 @@
-import { AppBar, Toolbar } from '@material-ui/core';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-
-// const useStyles = makeStyles((theme: Theme) => {});
+import styles from './Header.less';
 
 const Header: React.FC<{}> = () => {
-    return (
-        <AppBar>
-            <Toolbar>
-                <NavLink to="component">组件</NavLink>
-            </Toolbar>
-        </AppBar>
-    );
+    return <div className={styles.root}>123</div>;
 };
 
 export default Header;

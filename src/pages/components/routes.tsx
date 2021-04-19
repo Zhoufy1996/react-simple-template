@@ -7,7 +7,7 @@ const ComponentRoutes = () => {
     const match = useRouteMatch();
     return (
         <Switch>
-            <Route exact path={`${match.url}/siderbar`} component={SiderbarDemo} />
+            <Route exact path={`${match.url}/list`} component={SiderbarDemo} />
         </Switch>
     );
 };

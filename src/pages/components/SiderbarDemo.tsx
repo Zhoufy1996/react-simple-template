@@ -1,7 +1,6 @@
 import React from 'react';
 import faker from 'faker';
 import { range } from '../../shared/utils/range/range';
-import CustomNestedList from '../../shared/components/nestlist/NestedList';
 
 /**
  * 创建一个maxDepth层的SidebarData，每层数据为count个，
@@ -13,9 +12,6 @@ const getDataSouce = (maxDepth: number = 3, count: number = 8) => {
             key: faker.datatype.uuid(),
             data: {
                 text: faker.random.words(4),
-            },
-            render: (data) => {
-                return data.text;
             },
         };
 
@@ -33,8 +29,7 @@ const getDataSouce = (maxDepth: number = 3, count: number = 8) => {
 };
 
 const SiderbarDemo: React.FC<{}> = () => {
-    const dataSource = getDataSouce(3, 5);
-    return <CustomNestedList dataSource={dataSource} selectedKey="" />;
+    return <div>demo</div>;
 };
 
 export default SiderbarDemo;
